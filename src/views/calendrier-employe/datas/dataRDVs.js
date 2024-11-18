@@ -21,6 +21,7 @@ export default function DataRDVs() {
 
     const events = [
         { name: "Finishing Project", date: '2024-11-15', start: "08:00", end: "09:30", apparence: green },
+        { name: "Finishing Project", date: '2024-11-24', start: "08:00", end: "09:30", apparence: green },
         { name: "Consultation Project", date: '2024-11-18', start: "13:00", end: "14:45", apparence: purple },
         { name: "Feedback Project", date: '2024-11-19', start: "15:30", end: "16:00", apparence: blue },
         { name: "Design Review", date: '2024-11-18', start: "10:00", end: "11:00", apparence: blue },

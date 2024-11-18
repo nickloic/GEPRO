@@ -33,7 +33,7 @@ export default function ListeRDV({ RDVs }) {
             </div>
 
             {
-                prochainesDates.filter(jour => jour.jourDeLaSemaine !== "Dimanche").map((valDates, index) => (
+                prochainesDates.map((valDates, index) => (
                     <div key={index} className=''>
                         <div className='flex items-center gap-5 bg-soft-blue-bg p-2 rounded-lg'>
                             {icons.arrowTopFill}
