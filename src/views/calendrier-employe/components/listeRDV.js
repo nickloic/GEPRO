@@ -4,7 +4,7 @@ import { icons } from '../datas/icons'
 
 export default function ListeRDV({ RDVs }) {
 
-    const prochainesDates = DataProchainesDates()
+    const prochainesDates = DataProchainesDates().prochainesDates
 
     return (
         <div className=' p-5 h-screen overflow-y-scroll max-xl:bg-white max-xl:p-2'>
