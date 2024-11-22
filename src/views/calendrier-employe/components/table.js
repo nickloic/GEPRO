@@ -63,7 +63,7 @@ export default function Table({ events }) {
                         </p>
                         <span className='flex gap-1 text-soft-blue'>
                             {icons.calendarCheck}
-                            38 evenements
+                            40 evenements
                         </span>
                     </div>
                 </div>
