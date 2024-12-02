@@ -10,11 +10,11 @@ export default function CalendrierEmploye() {
 
   return (
     <div className='flex'>
-     <div className='flex fixed w-1/4'>
-     <SideBarEmploye/>
-     <ListeRDV RDVs = {RDVs}/>
-     </div>
-      <TableauRDV events = {RDVs}/>
+      <div className='flex fixed w-1/4'>
+        <SideBarEmploye />
+        <ListeRDV RDVs={RDVs} />
+      </div>
+      <TableauRDV events={RDVs} />
     </div>
   )
 }

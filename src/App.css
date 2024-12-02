@@ -12,12 +12,12 @@
   
   ::-webkit-scrollbar-track {
     background-color: #ffffff; /* Fond de la scrollbar (blanc) */
-    border-radius: 10px; /* Bordure arrondie du track */
+    border-radius: 100%; /* Bordure arrondie du track */
   }
   
   ::-webkit-scrollbar-thumb {
     background-color: #007bff; /* Couleur de la barre de défilement (bleu) */
-    border-radius: 10px; /* Bordure arrondie de la barre */
+    border-radius: 100%; /* Bordure arrondie de la barre */
     border: 2px solid #ffffff; /* Optionnel: bord blanc autour de la barre */
   }
   

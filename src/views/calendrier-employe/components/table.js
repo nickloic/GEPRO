@@ -77,8 +77,8 @@ export default function Table({ events }) {
                     <select onChange={(e) => {
                         getNextMonthDays(e.target.value)
                     }}
-                        className='p-2 border rounded-full flex gap-1 bg-white'>
-                        <option>{days[0].mois}</option>
+                        className='p-2 hover:bg-soft-white cursor-pointer border rounded-full flex bg-white'>
+                        <option>Mois</option>
                         {moisDeLAnnee.map((val, id) => (
                             <option key={id} value={id}>{val}</option>
                         ))}

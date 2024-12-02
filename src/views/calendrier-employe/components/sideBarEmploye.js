@@ -10,14 +10,14 @@ export default function SideBarEmploye() {
         <ul className='flex flex-col w-full items-center gap-8'>
           {
             dataSidebarEmploye.map((val, index) => (
-              <li key={index}>{val.icon}</li>
+              <li key={index} className='cursor-pointer'>{val.icon}</li>
             ))
           }
         </ul>
         <ul className='flex flex-col w-full items-center gap-8'>
           {
             bottomIcons.map((val, index) => (
-              <li key={index}>{val.icon}</li>
+              <li key={index} className='cursor-pointer'>{val.icon}</li>
             ))
           }
         </ul>

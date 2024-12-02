@@ -11,7 +11,7 @@ import DataProchainesDates from '../datas/dataProchainesDates';
 // Heures limitées de 08:00 à 16:00
 const hours = Array.from({ length: 9 }, (_, i) => `${(i + 8).toString().padStart(2, '0')}:00`);
 
-const Calendar = ({ events, days, current_month }) => {
+const Calendar = ({ events, days }) => {
 
   function obtenirDateAujourdHui() {
     const aujourdHui = new Date();
@@ -35,7 +35,7 @@ const Calendar = ({ events, days, current_month }) => {
         <div className=''></div> {/* Colonne vide pour l'en-tête des heures */}
         {days.map((day, index) => (
           <div key={index} className="text-center font-bold" style={{ color: day.dateComplete === obtenirDateAujourdHui() ? '#3c5ff0' : '#000000', opacity: day.dateComplete === obtenirDateAujourdHui() ? 1 : 0.5 }}>
-            {day.dateComplete === obtenirDateAujourdHui() ? day.jourDeLaSemaine + ', ' + day.jourDansLeMois : day.jourDeLaSemaine[0] + ', ' + day.jourDansLeMois}
+            {day.dateComplete === obtenirDateAujourdHui() ? day.jourDeLaSemaine + ', ' + day.jourDansLeMois : day.jourDeLaSemaine.slice(0, 3) + ', ' + day.jourDansLeMois}
           </div>
         ))}
         {/* Colonne des heures */}
